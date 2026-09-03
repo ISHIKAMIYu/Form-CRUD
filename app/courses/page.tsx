@@ -1,35 +1,37 @@
 import CourseCard, { Course } from "@/components/CourseCard";
 
-const courses: Course[] = [
+const coursesData: Course[] = [
   {
-    id: 1,
-    code: "10301231",
+    id: 10301231,
+    courseCode: "10301231",
     title: "Web Technology",
     credits: 3,
-    isOpen: true,
+    status: "เปิดลงทะเบียน",
   },
   {
-    id: 2,
-    code: "10301232",
+    id: 10301232,
+    courseCode: "10301232",
     title: "Database Systems",
     credits: 3,
-    isOpen: false,
+    status: "ปิดลงทะเบียน",
   },
   {
-    id: 3,
-    code: "10301233",
+    id: 10301233,
+    courseCode: "10301233",
     title: "Computer Programming",
     credits: 3,
-    isOpen: true,
+    status: "เปิดลงทะเบียน",
   },
 ];
 
 export default function CoursesPage() {
   return (
-    <main className="page">
-      <h1>รายวิชาทั้งหมด</h1>
-      <section className="courseGrid">
-        {courses.map((course) => (
+    <main style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto" }}>
+      <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "2rem" }}>
+        รายวิชาทั้งหมด
+      </h1>
+      <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+        {coursesData.map((course) => (
           <CourseCard key={course.id} course={course} />
         ))}
       </section>

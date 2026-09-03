@@ -82,7 +82,7 @@ const favoriteBands: Band[] = [
         name: "วิทย์ (เจนวิทย์ จันทร์อุไร)",
         role: "กีตาร์",
         image: "/images/bands/เจนวิทย์ จันทร์อุไร.jpg",
-      },
+      }
     ],
   },
 ];
