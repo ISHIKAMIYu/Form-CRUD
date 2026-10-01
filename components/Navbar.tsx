@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function Navbar() {
@@ -25,6 +26,12 @@ export default function Navbar() {
         <li>
           <Link className="navLink" href="/bands">
             วงดนตรีที่ชอบ
+          </Link>
+        </li>
+
+        <li>
+          <Link className="navLink" href="/game">
+            เกม
           </Link>
         </li>
       </ul>
